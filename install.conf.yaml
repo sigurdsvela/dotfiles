@@ -1,6 +1,6 @@
 - clean: ['~']
 
 - link:
-    ~/.gitconfig: 'gitconfig'
-    ~/.bash_profile: 'bash_profile'
-    ~/.vimrc: 'vimrc'
+    ~/.gitconfig: 'dotfiles/gitconfig'
+    ~/.bash_profile: 'dotfiles/bash_profile'
+    ~/.vimrc: 'dotfiles/vimrc'
