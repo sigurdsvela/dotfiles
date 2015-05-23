@@ -4,6 +4,9 @@
   clean = git lfs clean %f
   smudge = git lfs smudge %f
   required = true
+[filter "media"]
+  clean = git-media-clean %f
+  smudge = git-media-smudge %f
 [user]
   name = "sigurdsvela"
   email = "sigurdbergsvela@gmail.com"
