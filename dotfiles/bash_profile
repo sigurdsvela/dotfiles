@@ -1,4 +1,9 @@
+#Set LS colors
 export CLICOLOR=1
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
+
+#Default Editor
 export EDITOR=vim
+
+# subl cmd
 alias "subl"="open $0 -a \"Sublime Text\""
