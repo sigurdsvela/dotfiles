@@ -9,6 +9,6 @@ export EDITOR=vim
 alias "subl"="open $0 -a \"Sublime Text\""
 
 # Set the cmd prompt
-export PS1="\e[0;33m[\#] \u@\h \W> \e[m"
+export PS1="\[\e[0;33m[\#] \u@\h \W>\e[m\] "
 # 0;35
 
