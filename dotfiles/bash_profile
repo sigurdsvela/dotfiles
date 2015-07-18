@@ -12,6 +12,7 @@ alias "subl"="open $0 -a \"Sublime Text\""
 alias "macdown"="open $0 -a \"Macdown\""
 
 # Set the cmd prompt
-export PS1="\[\e[0;33m[\#] \u@\h \W>\e[m\] "
+export PS1="\e[0;33m\u@\h ~>\] "
+
 # 0;35
 
