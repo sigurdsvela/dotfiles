@@ -1,3 +1,8 @@
+
+source ~/profile/git-super-status/zshrc.sh;
+
+export PATH=/usr/local/php5/bin:$PATH
+
 #Set LS colors
 export CLICOLOR=1
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
@@ -11,11 +16,30 @@ alias "subl"="open $0 -a \"Sublime Text\""
 # macdown cmd
 alias "macdown"="open $0 -a \"Macdown\""
 
+# WP Cli #
+alias "wp"="php /usr/local/bin/wp-cli.phar $@"
+
+# Composer #
+alias "composer"="php composer.phar"
+
 # PHP Unit
-alias "phpunit"="/usr/local/bin/phpunit.phar"
+alias "phpunit"="php /usr/local/bin/phpunit.phar $@"
 
 # Set the cmd prompt
-export PS1="\[\e[33m\]\u@\h:\W/ -> \[\e[0m\]"
+# export PS1="\[\e[33m\]\u@\h:\W/ -> \[\e[0m\]"
+function color_my_prompt {
+    local __user_and_host="\[\033[01;32m\]\u@\h"
+    local __cur_location="\[\033[01;34m\]\w"
+    # local __git_branch_color="\[\033[31m\]"
+    # local __git_branch="\`ruby -e \"print (%x{git branch 2> /dev/null}.grep(/^\*/).first || '').gsub(/^\* (.+)$/, '(\1) ')\"\`"
+    # local __git_branch='`git branch 2> /dev/null | grep -e ^* | sed -E  s/^\\\\\*\ \(.+\)$/\(\\\\\1\)\ /`'
+    local __prompt_tail="\[\033[35m\]$"
+    local __last_color="\[\033[00m\]"
+    # local __git_dirty='`git rev-parse 2>/dev/null && (git diff --no-ext-diff --quiet --exit-code 2> /dev/null || echo -e \*)`'
+    # export PS1="$__user_and_host $__cur_location $__git_branch_color$__git_branch$__git_dirty$__prompt_tail$__last_color "
+    export PS1="$__user_and_host $__cur_location $(git_super_status) $__prompt_tail$__last_color "
+}
+color_my_prompt
 
 # 0;35
 
