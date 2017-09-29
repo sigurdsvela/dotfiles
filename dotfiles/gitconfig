@@ -12,5 +12,3 @@
 	email = "sigurdbergsvela@gmail.com"
 [push]
 	default = matching
-[pull]
-	rebase = true
