@@ -1,7 +1,7 @@
 
-source ~/profile/git-super-status/zshrc.sh;
-
 export PATH=/usr/local/php5/bin:$PATH
+
+export XARGO_RUST_SRC=/Users/sigurdsvela/Projects/rustlang/src/
 
 #Set LS colors
 export CLICOLOR=1
@@ -37,9 +37,11 @@ function color_my_prompt {
     local __last_color="\[\033[00m\]"
     # local __git_dirty='`git rev-parse 2>/dev/null && (git diff --no-ext-diff --quiet --exit-code 2> /dev/null || echo -e \*)`'
     # export PS1="$__user_and_host $__cur_location $__git_branch_color$__git_branch$__git_dirty$__prompt_tail$__last_color "
-    export PS1="$__user_and_host $__cur_location $(git_super_status) $__prompt_tail$__last_color "
+    export PS1="$__user_and_host $__cur_location $__prompt_tail$__last_color "
 }
 color_my_prompt
 
 # 0;35
 
+
+export PATH="$HOME/.cargo/bin:$PATH"
