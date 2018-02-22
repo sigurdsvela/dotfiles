@@ -8,7 +8,7 @@
 	clean = git-media-clean %f
 	smudge = git-media-smudge %f
 [user]
-	name = "sigurdsvela"
-	email = "sigurdbergsvela@gmail.com"
+	name = sigurdsvela
+	email = sigurdbergsvela@gmail.com
 [push]
 	default = matching
