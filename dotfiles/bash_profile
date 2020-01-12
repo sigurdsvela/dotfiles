@@ -46,6 +46,8 @@ color_my_prompt
 
 export PATH="$HOME/.cargo/bin:$PATH"
 
+export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+
 export NVM_DIR="/Users/sigurdsvela/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 
