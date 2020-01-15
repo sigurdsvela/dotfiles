@@ -10,23 +10,11 @@ export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 #Default Editor
 export EDITOR=vim
 
-#arduino cli alias
-alias "arduino"="arduino-cli"
-
 # subl cmd
-alias "subl"="open $0 -a \"Sublime Text\""
+alias "vs"="open $0 -a \"Visual Studio Code\""
 
 # macdown cmd
 alias "macdown"="open $0 -a \"Macdown\""
-
-# WP Cli #
-alias "wp"="php /usr/local/bin/wp-cli.phar $@"
-
-# Composer #
-alias "composer"="php composer.phar"
-
-# PHP Unit
-alias "phpunit"="php /usr/local/bin/phpunit.phar $@"
 
 # Set the cmd prompt
 # export PS1="\[\e[33m\]\u@\h:\W/ -> \[\e[0m\]"
@@ -43,18 +31,3 @@ function color_my_prompt {
     export PS1="$__cur_location $__prompt_tail$__last_color "
 }
 color_my_prompt
-
-# 0;35
-
-
-export PATH="$HOME/.cargo/bin:$PATH"
-
-export PATH="/usr/local/opt/python/libexec/bin:$PATH"
-
-export NVM_DIR="/Users/sigurdsvela/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-
-# added by Anaconda3 5.0.1 installer
-export PATH="/Users/sigurdsvela/anaconda3/bin:$PATH"
-
-export PATH="$PATH:$(brew --prefix llvm)/bin"
